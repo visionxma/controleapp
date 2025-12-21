@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Controle - Gestão de vendas e estoque para seu Negócio</title>
+    <meta name="description"
+        content="Sistema completo de controle de estoque, vendas e caixa. Organize sua loja com eficiência e tome decisões inteligentes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-container">
+                    <img src="assets/logo.png" alt="Sistema de Controle.App" class="logo-img" />
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link">Início</a></li>
+                    <li><a href="#features" class="nav-link">Funcionalidades</a></li>
+                    <li><a href="#showcase" class="nav-link">Demonstração</a></li>
+                    <li><a href="#benefits" class="nav-link">Benefícios</a></li>
+                    <li><a href="#cta" class="nav-link btn-nav-cta">Começar Agora</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="animated-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-highlight">Sistema de Controle</span>
+                        <span class="title-main">Completo, Simples e Eficaz!</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Controle suas vendas de uma forma simples e fácil, sem complicações!
+                        Tenha total controle de estoque, caixa e relatórios em um único sistema.
+                    </p>
+                    <div class="hero-features-list">
+                        <div class="hero-feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Controle de Estoque Inteligente</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Gestão de Vendas Completa</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Relatórios em Tempo Real</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#cta" class="btn btn-primary btn-large">
+                            Começar Agora
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#showcase" class="btn btn-secondary btn-large">
+                            Ver Demonstração
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="assets/COmputador.png" alt="Sistema de Controle Desktop" class="floating-image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tudo que você precisa em um só lugar</h2>
+                <p class="section-subtitle">
+                    Com o Sistema de Controle.App você tem total controle de seu estoque,
+                    ganha eficiência e rapidez na rotina da sua loja e diminui a margem de erros.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Caixa</h3>
+                    <p class="feature-description">
+                        Controle completo do seu caixa com registro de todas as movimentações,
+                        formas de pagamento e fechamento diário automatizado.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Abertura e fechamento de caixa</li>
+                        <li>Múltiplas formas de pagamento</li>
+                        <li>Relatórios de movimentação</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M20 7h-9"></path>
+                            <path d="M14 17H5"></path>
+                            <circle cx="17" cy="17" r="3"></circle>
+                            <circle cx="7" cy="7" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Produtos</h3>
+                    <p class="feature-description">
+                        Cadastre e gerencie seus produtos com facilidade.
+                        Controle preços, variações e informações detalhadas.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Cadastro rápido de produtos</li>
+                        <li>Variações e categorias</li>
+                        <li>Controle de preços e margens</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Estoque</h3>
+                    <p class="feature-description">
+                        Gestão inteligente de estoque com alertas de produtos em falta
+                        e atualização automática a cada venda.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Atualização automática</li>
+                        <li>Alertas de estoque baixo</li>
+                        <li>Histórico de movimentações</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Vendas</h3>
+                    <p class="feature-description">
+                        Realize vendas com agilidade, emita notas e acompanhe
+                        todo o histórico de transações em tempo real.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Vendas rápidas e intuitivas</li>
+                        <li>Emissão de notas</li>
+                        <li>Histórico completo</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Relatórios</h3>
+                    <p class="feature-description">
+                        Relatórios detalhados e dashboards intuitivos para
+                        acompanhar o desempenho do seu negócio.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Faturamento e lucro</li>
+                        <li>Produtos mais vendidos</li>
+                        <li>Análise de períodos</li>
+                    </ul>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Configurações</h3>
+                    <p class="feature-description">
+                        Personalize o sistema de acordo com suas necessidades
+                        e mantenha seus dados sempre seguros.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Configurações personalizadas</li>
+                        <li>Backup automático</li>
+                        <li>Segurança de dados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Veja o sistema em ação</h2>
+                <p class="section-subtitle">
+                    Interface moderna e intuitiva, disponível em desktop e mobile
+                </p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item showcase-desktop">
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Versão Desktop</h3>
+                        <p class="showcase-description">
+                            Acesse de qualquer computador através do navegador.
+                            Interface completa com todos os recursos para gestão profissional.
+                        </p>
+                        <ul class="showcase-features">
+                            <li>Dashboard Completo</li>
+                            <li>Lançamento de Vendas</li>
+                            <li>Cadastro de Produtos</li>
+                            <li>Atualização de Estoque</li>
+                            <li>Relatórios Detalhados</li>
+                        </ul>
+                    </div>
+                    <div class="showcase-image">
+                        <img src="assets/COmputador.png" alt="Sistema Desktop" />
+                    </div>
+                </div>
+
+                <div class="showcase-item showcase-mobile">
+                    <div class="showcase-image">
+                        <img src="assets/celular.png" alt="Sistema Mobile" />
+                    </div>
+                    <div class="showcase-content">
+                        <h3 class="showcase-title">Versão Mobile</h3>
+                        <p class="showcase-description">
+                            Gerencie seu negócio de qualquer lugar.
+                            Aplicativo responsivo com todas as funcionalidades essenciais.
+                        </p>
+                        <ul class="showcase-features">
+                            <li>Acesso em qualquer dispositivo</li>
+                            <li>Vendas em movimento</li>
+                            <li>Consulta rápida de estoque</li>
+                            <li>Sincronização em tempo real</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher o Sistema de Controle.App?</h2>
+                <p class="section-subtitle">
+                    Simplifique sua gestão e tome decisões mais inteligentes
+                </p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">01</div>
+                    <h3 class="benefit-title">Simples de Usar</h3>
+                    <p class="benefit-description">
+                        Interface intuitiva que não requer treinamento.
+                        Comece a usar em minutos e aumente sua produtividade.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">02</div>
+                    <h3 class="benefit-title">Completo</h3>
+                    <p class="benefit-description">
+                        Todas as funcionalidades que você precisa em um único sistema.
+                        Caixa, estoque, vendas e relatórios integrados.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">03</div>
+                    <h3 class="benefit-title">Seguro</h3>
+                    <p class="benefit-description">
+                        Seus dados protegidos com tecnologia Google Firebase.
+                        Backup automático e acesso controlado.
+                    </p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">04</div>
+                    <h3 class="benefit-title">Acessível</h3>
+                    <p class="benefit-description">
+                        Investimento que cabe no seu bolso.
+                        Apenas R$ 50,00 para organizar completamente seu negócio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h2 class="pricing-title">Organize sua loja hoje mesmo</h2>
+                    <p class="pricing-subtitle">
+                        Pare de perder dinheiro por falta de controle
+                    </p>
+                </div>
+                <div class="pricing-content">
+                    <div class="price-box">
+                        <div class="price-tag">
+                            <span class="currency">R$</span>
+                            <span class="amount">50</span>
+                            <span class="period">,00</span>
+                        </div>
+                        <p class="price-description">
+                            Menos de <strong>R$ 1,70 por dia</strong> para ter tudo funcionando
+                        </p>
+                    </div>
+                    <div class="pricing-features">
+                        <h3>O que está incluído:</h3>
+                        <ul>
+                            <li>✓ Gestão de Produtos e Estoque</li>
+                            <li>✓ Sistema de Vendas</li>
+                            <li>✓ Relatórios e Dashboards</li>
+                            <li>✓ Acesso Desktop e Mobile</li>
+                            <li>✓ Backup automático na nuvem</li>
+                            <li>✓ Suporte técnico</li>
+                            <li>✓ Atualizações gratuitas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Pronto para transformar sua gestão?</h2>
+                <p class="cta-subtitle">
+                    Junte-se a centenas de lojistas que já organizaram seus negócios
+                </p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5599984680391?text=Olá! Quero conhecer o Sistema de Controle.App"
+                        target="_blank" class="btn btn-primary btn-large">
+                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                        Falar no WhatsApp
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary btn-large">
+                        Ver Planos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.png" alt="Sistema de Controle.App" class="footer-logo" />
+                    <p class="footer-description">
+                        Sistema completo de gestão para pequenos e médios negócios.
+                        Controle total, simplicidade e eficiência.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Sistema</h4>
+                        <ul>
+                            <li><a href="#features">Funcionalidades</a></li>
+                            <li><a href="#showcase">Demonstração</a></li>
+                            <li><a href="#benefits">Benefícios</a></li>
+                            <li><a href="#pricing">Preços</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul>
+                            <li><a href="#">(99) 9 8468-0391</a></li>
+                            <li><a href="#">visionxma@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sistema de Controle - Todos os direitos reservados</p>
+                <p class="footer-credit">
+                    Desenvolvido por <strong><a href="https://visionxma.com" target="_blank">VisionX</a></strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
