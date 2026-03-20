@@ -154,7 +154,7 @@ ctaButtons.forEach(button => {
         ripple.style.top = y + 'px';
         ripple.classList.add('ripple');
 
-        button.AppendChild(ripple);
+        button.appendChild(ripple);
 
         setTimeout(() => ripple.remove(), 600);
 
