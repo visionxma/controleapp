@@ -165,7 +165,7 @@ ctaButtons.forEach(button => {
 // ========== Image Lazy Loading ==========
 const images = document.querySelectorAll('img[data-src]');
 
-const imageObserver = new IntersectionObserver((entries, observer) => {
+const imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const img = entry.target;
@@ -224,7 +224,7 @@ window.addEventListener('load', () => {
 });
 
 // ========== Console Message ==========
-console.log('%c🚀 Sistema de Controle.App', 'font-size: 20px; font-weight: bold; color: #1DA1F2;');
+console.log('%c🚀 SoftPay', 'font-size: 20px; font-weight: bold; color: #1DA1F2;');
 console.log('%cDesenvolvido por VisionX Soluções Tecnológicas', 'font-size: 12px; color: #666;');
 console.log('%chttps://visionxma.com', 'font-size: 12px; color: #1DA1F2;');
 
