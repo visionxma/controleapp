@@ -1045,7 +1045,22 @@ section {
     }
 
     .hero {
-        padding: calc(80px + var(--spacing-2xl)) 0 var(--spacing-2xl);
+        padding: calc(80px + var(--spacing-lg)) 0 var(--spacing-xl);
+    }
+
+    .hero-content {
+        display: block;
+        position: relative;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 1;
+        padding-bottom: var(--spacing-xl);
     }
 
     .hero-cta {
