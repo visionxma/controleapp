@@ -137,6 +137,35 @@ whatsappButtons.forEach(button => {
     });
 });
 
+// ========== Meta Pixel - CompleteRegistration (Trial Signup) ==========
+const registrationTriggers = document.querySelectorAll('[data-track="complete-registration"]');
+
+registrationTriggers.forEach(el => {
+    el.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+            fbq('track', 'CompleteRegistration', {
+                content_name: el.textContent.trim(),
+                status: 'trial-7-days',
+                source: el.href || 'sticky-cta'
+            });
+        }
+    });
+});
+
+// ========== Meta Pixel - WhatsApp Support (Lead) ==========
+const whatsappTriggers = document.querySelectorAll('[data-track="whatsapp-support"], .whatsapp-float');
+
+whatsappTriggers.forEach(el => {
+    el.addEventListener('click', () => {
+        if (typeof fbq === 'function') {
+            fbq('track', 'Lead', {
+                content_name: 'WhatsApp Support',
+                content_category: 'Trial 7 Days'
+            });
+        }
+    });
+});
+
 // ========== CTA Button Click Tracking ==========
 const ctaButtons = document.querySelectorAll('.btn-primary, .btn-secondary');
 

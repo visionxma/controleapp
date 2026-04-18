@@ -28,6 +28,10 @@
     fbq('init', '1476552610693219');
     fbq('init', '26424939163836170');
     fbq('track', 'PageView');
+    fbq('track', 'ViewContent', {
+        content_name: 'Landing Page SoftPay',
+        content_category: 'Gestão de Vendas e Estoque'
+    });
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1476552610693219&ev=PageView&noscript=1"
@@ -57,7 +61,7 @@
                     <li><a href="#features" class="nav-link">Funcionalidades</a></li>
                     <li><a href="#showcase" class="nav-link">Demonstração</a></li>
                     <li><a href="#benefits" class="nav-link">Benefícios</a></li>
-                    <li><a href="#cta" class="nav-link btn-nav-cta">Começar Agora</a></li>
+                    <li><a href="#cta" class="nav-link btn-nav-cta">Teste Grátis 7 Dias</a></li>
                 </ul>
             </div>
         </div>
@@ -76,37 +80,41 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <span class="hero-offer-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="14" height="14"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        7 dias grátis · sem cartão de crédito
+                    </span>
                     <h1 class="hero-title">
                         <span class="title-highlight">SoftPay</span>
-                        <span class="title-main">Completo, Simples e Eficaz!</span>
+                        <span class="title-main">Organize sua loja hoje. Pague apenas se gostar.</span>
                     </h1>
                     <p class="hero-subtitle">
-                        Controle suas vendas de uma forma simples e fácil, sem complicações!
-                        Tenha total controle de estoque, caixa e relatórios em um único sistema.
+                        Experimente grátis por 7 dias. Sem cartão de crédito, sem compromisso.
+                        Acesso total a todas as funcionalidades durante o teste.
                     </p>
                     <div class="hero-features-list">
                         <div class="hero-feature-item">
                             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>Controle de Estoque Inteligente</span>
+                            <span><strong>7 Dias de Teste Total:</strong> teste tudo, sem travas</span>
                         </div>
                         <div class="hero-feature-item">
                             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>Gestão de Vendas Completa</span>
+                            <span><strong>Zero Risco:</strong> não pedimos cartão para você começar</span>
                         </div>
                         <div class="hero-feature-item">
                             <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>Relatórios em Tempo Real</span>
+                            <span><strong>Suporte Humano:</strong> te ajudamos a configurar via WhatsApp</span>
                         </div>
                     </div>
                     <div class="hero-cta">
-                        <a href="https://softpaybr.com/" target="_blank" class="btn btn-primary btn-large">
-                            Começar Agora
+                        <a href="https://softpaybr.com/" target="_blank" class="btn btn-primary btn-large" data-track="complete-registration">
+                            Começar Teste Grátis de 7 Dias
                             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                 <polyline points="12 5 19 12 12 19"></polyline>
@@ -119,15 +127,15 @@
                     <div class="hero-trust">
                         <span class="hero-trust-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Comece em 30 segundos
+                        </span>
+                        <span class="hero-trust-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             Mais de 200 lojistas ativos
                         </span>
                         <span class="hero-trust-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
                             Suporte via WhatsApp
-                        </span>
-                        <span class="hero-trust-item">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                            Sem mensalidade
                         </span>
                     </div>
                 </div>
@@ -389,7 +397,7 @@
                     <h3 class="benefit-title">Acessível</h3>
                     <p class="benefit-description">
                         Investimento que cabe no seu bolso.
-                        Apenas R$ 49,90 para organizar completamente seu negócio.
+                        Apenas R$ 100,00/mês para organizar completamente seu negócio.
                     </p>
                 </div>
             </div>
@@ -402,80 +410,54 @@
             <div class="pricing-header-new">
                 <span class="pricing-badge">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="14" height="14"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    14 dias grátis no Plano Pro
+                    7 dias grátis · sem cartão de crédito
                 </span>
-                <h2 class="pricing-title-new">Escolha o plano ideal para seu negócio</h2>
+                <h2 class="pricing-title-new">Experimente grátis antes de pagar</h2>
                 <p class="pricing-subtitle-new">
-                    Sistema completo de gestão para lojas e comércios. PDV,<br>
-                    estoque, relatórios e muito mais em um só lugar.
+                    Teste todos os recursos por 7 dias sem cartão de crédito.<br>
+                    Escolha o plano que cabe no seu negócio só depois de experimentar.
                 </p>
             </div>
 
-            <div class="plans-grid">
+            <div class="plans-grid plans-grid--single">
 
-                <!-- Plano Básico -->
-                <div class="plan-card">
-                    <div class="plan-icon-wrap plan-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="28" height="28">
-                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-                        </svg>
-                    </div>
-                    <h3 class="plan-name">Básico</h3>
-                    <p class="plan-desc">Para o dono da loja</p>
-                    <div class="plan-price">
-                        <span class="plan-currency">R$</span>
-                        <span class="plan-amount">49,90</span>
-                        <span class="plan-period">/mês</span>
-                    </div>
-                </div>
-
-                <!-- Plano Pro (destaque) -->
+                <!-- Plano Único -->
                 <div class="plan-card plan-card--popular">
-                    <span class="plan-popular-badge">Mais Popular</span>
+                    <span class="plan-popular-badge">Plano Completo</span>
                     <div class="plan-icon-wrap plan-icon-blue">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="28" height="28">
                             <path d="M2 4l3 12h14l3-12-6 5-4-7-4 7-6-5z"></path>
                         </svg>
                     </div>
-                    <h3 class="plan-name">Pro</h3>
-                    <p class="plan-desc">Para lojas com equipe</p>
+                    <h3 class="plan-name">SoftPay</h3>
+                    <p class="plan-desc">Tudo que sua loja precisa em um só lugar</p>
                     <div class="plan-price">
                         <span class="plan-currency">R$</span>
-                        <span class="plan-amount">99,90</span>
+                        <span class="plan-amount">100,00</span>
                         <span class="plan-period">/mês</span>
                     </div>
-                </div>
-
-                <!-- Plano Enterprise -->
-                <div class="plan-card">
-                    <span class="plan-enterprise-badge">Para Grandes Negócios</span>
-                    <div class="plan-icon-wrap plan-icon-orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="28" height="28">
-                            <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
-                            <line x1="12" y1="12" x2="12" y2="16"></line>
-                            <line x1="10" y1="14" x2="14" y2="14"></line>
-                        </svg>
-                    </div>
-                    <h3 class="plan-name">Enterprise</h3>
-                    <p class="plan-desc">Para grandes negócios</p>
-                    <div class="plan-price">
-                        <span class="plan-currency">R$</span>
-                        <span class="plan-amount">299,00</span>
-                        <span class="plan-period">/mês</span>
-                    </div>
+                    <ul class="plan-features">
+                        <li>Acesso total a todas as funcionalidades</li>
+                        <li>PDV, estoque e relatórios</li>
+                        <li>Suporte via WhatsApp</li>
+                        <li>Cancele quando quiser</li>
+                    </ul>
                 </div>
 
             </div>
 
             <div class="plans-cta">
-                <a href="https://softpaybr.com/planos-info" target="_blank" class="btn btn-primary btn-large">
-                    Saiba Mais
+                <a href="https://softpaybr.com/" target="_blank" class="btn btn-primary btn-large" data-track="complete-registration">
+                    Começar Teste Grátis de 7 Dias
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <line x1="5" y1="12" x2="19" y2="12"></line>
                         <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
                 </a>
+                <p class="plans-support-note">
+                    Precisa de ajuda para configurar?
+                    <a href="https://wa.me/5599984680391?text=Olá!%20Tenho%20dúvidas%20sobre%20os%207%20dias%20grátis%20do%20SoftPay." target="_blank" data-track="whatsapp-support">Nosso suporte via WhatsApp está pronto para te ajudar agora.</a>
+                </p>
             </div>
         </div>
     </section>
@@ -484,13 +466,14 @@
     <section id="cta" class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Pronto para transformar sua gestão?</h2>
+                <h2 class="cta-title">Comece agora · 7 dias grátis, sem cartão</h2>
                 <p class="cta-subtitle">
-                    Junte-se a centenas de lojistas que já organizaram seus negócios
+                    Junte-se a centenas de lojistas que já organizaram seus negócios.
+                    Sem compromisso, cancele quando quiser.
                 </p>
                 <div class="cta-buttons">
-                    <a href="https://softpaybr.com/" target="_blank" class="btn btn-primary btn-large">
-                        Acessar o Sistema
+                    <a href="https://softpaybr.com/" target="_blank" class="btn btn-primary btn-large" data-track="complete-registration">
+                        Começar Teste Grátis
                     </a>
                     <a href="#pricing" class="btn btn-secondary btn-large">
                         Ver Planos
@@ -538,6 +521,26 @@
             </div>
         </div>
     </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="mobile-sticky-cta" id="mobileStickyCta">
+        <a href="https://softpaybr.com/" target="_blank" class="mobile-sticky-btn" data-track="complete-registration">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="18" height="18">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Teste Grátis · 7 Dias
+        </a>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5599984680391?text=Olá!%20Tenho%20dúvidas%20sobre%20os%207%20dias%20grátis%20do%20SoftPay." target="_blank" class="whatsapp-float" id="whatsappFloat" aria-label="Fale conosco no WhatsApp">
+        <span class="whatsapp-bubble">Dúvida sobre os 7 dias grátis? Fale conosco!</span>
+        <span class="whatsapp-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+            </svg>
+        </span>
+    </a>
 
     <script src="script.js"></script>
 </body>
