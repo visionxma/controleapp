@@ -343,6 +343,10 @@ body {
 
 .hero-image {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .image-wrapper {
@@ -863,12 +867,6 @@ section {
     border-top: 1px solid var(--color-gray-200);
 }
 
-.plan-features li {
-    font-size: 0.9rem;
-    color: var(--color-gray-700);
-    padding: 0.25rem 0;
-}
-
 /* Botão abaixo dos planos */
 .plans-cta {
     text-align: center;
@@ -1107,6 +1105,10 @@ section {
     }
 
     .hero-image {
+        margin-top: var(--spacing-lg);
+    }
+
+    .hero-image .image-wrapper {
         display: none;
     }
 
@@ -1345,6 +1347,288 @@ section {
 
 .plans-support-note a:hover {
     text-decoration: underline;
+}
+
+/* ========== Pricing CTA Button (blue on white background) ========== */
+.btn-primary-blue {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    box-shadow: 0 8px 24px rgba(29, 161, 242, 0.35);
+}
+
+.btn-primary-blue:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(29, 161, 242, 0.45);
+    color: var(--color-white);
+}
+
+/* ========== Plans Trust Line ========== */
+.plans-trust-line {
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-gray-600);
+    font-weight: 500;
+}
+
+/* ========== Testimonials Section ========== */
+.testimonials {
+    background: var(--color-white);
+}
+
+/* ── Aproxima header do badge ── */
+.testimonials .section-header {
+    margin-bottom: 16px;
+}
+
+/* ── Social proof badge ── */
+.social-proof-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #0a1628;
+    border: 1.5px solid #2563eb55;
+    border-radius: 999px;
+    padding: 8px 20px 8px 10px;
+    box-shadow: 0 0 0 1px #1d4ed820, 0 4px 24px #2563eb22;
+    width: fit-content;
+}
+
+.social-proof-avatars {
+    display: flex;
+    align-items: center;
+}
+
+.social-proof-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2.5px solid #0a1628;
+    object-fit: cover;
+    margin-left: -10px;
+    display: block;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.social-proof-avatars .social-proof-avatar:first-child {
+    margin-left: 0;
+}
+
+.social-proof-avatar--placeholder {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-proof-avatar--placeholder svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
+.social-proof-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+}
+
+/* Carousel base (todos os viewports) */
+.testimonials-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.testimonials-track-outer {
+    overflow: hidden;
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 0;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    width: 100%;
+    transition: transform 0.42s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+
+/* ── Card container ── */
+.testimonial-card {
+    position: relative;        /* âncora do avatar absoluto */
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-200);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition-base);
+}
+
+/* ── Cover photo (top banner) ── */
+.testimonial-cover {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.testimonial-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* placeholder icon shown when there's no real photo */
+.testimonial-cover-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    pointer-events: none;
+}
+
+.testimonial-cover-placeholder span {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+/* ── Avatar: posicionado absolutamente sobre a fronteira capa/corpo ── */
+.testimonial-avatar {
+    position: absolute;
+    top: 84px;          /* 120px capa − 36px (metade de 72px) */
+    left: 1.25rem;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-white);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    background: var(--color-gray-200);
+    z-index: 1;         /* garante que fica sobre a capa */
+}
+
+/* ── Card body: espaço extra no topo para a metade inferior do avatar ── */
+.testimonial-body {
+    padding: 0 1.25rem 1.5rem;
+    padding-top: calc(36px + 14px); /* metade avatar + folga */
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    color: var(--color-gray-900);
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.testimonial-business {
+    font-size: 0.8125rem;
+    color: var(--color-gray-600);
+    margin-bottom: 0.35rem;
+}
+
+.testimonial-stars {
+    color: #F59E0B;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-text {
+    color: var(--color-gray-700);
+    line-height: 1.65;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* ========== Testimonials Carousel (todos os viewports) ========== */
+.testimonial-card.carousel-active {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Arrow buttons */
+.carousel-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background: var(--color-white);
+    border: 1.5px solid var(--color-gray-200);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: var(--color-primary);
+    transition: background var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+    z-index: 2;
+}
+
+.carousel-arrow:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 14px rgba(29, 161, 242, 0.35);
+    transform: scale(1.08);
+}
+
+.carousel-arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+    transform: none;
+}
+
+/* Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-gray-300);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background var(--transition-base), transform var(--transition-base), width var(--transition-base);
+}
+
+.carousel-dot.active {
+    background: var(--color-primary);
+    width: 22px;
+    border-radius: 4px;
+    transform: none;
 }
 
 /* ========== WhatsApp Floating Button ========== */

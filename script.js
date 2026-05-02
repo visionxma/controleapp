@@ -252,6 +252,57 @@ window.addEventListener('load', () => {
     });
 });
 
+// ========== Testimonials Carousel ==========
+function initTestimonialsCarousel() {
+    const track = document.getElementById('testimonialsTrack');
+    const outer = track?.parentElement;
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    const cards = Array.from(track?.querySelectorAll('.testimonial-card') || []);
+
+    if (!track || cards.length === 0) return;
+
+    let current = 0;
+    const total = cards.length;
+
+    function applyTransform(index) {
+        track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function goTo(index) {
+        current = ((index % total) + total) % total;
+
+        cards.forEach((card, i) => card.classList.toggle('carousel-active', i === current));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+
+        applyTransform(current);
+    }
+
+    prevBtn?.addEventListener('click', () => goTo(current - 1));
+    nextBtn?.addEventListener('click', () => goTo(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+    // Touch / swipe support
+    let touchStartX = 0;
+    track.addEventListener('touchstart', e => {
+        touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    track.addEventListener('touchend', e => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 45) {
+            diff > 0 ? goTo(current + 1) : goTo(current - 1);
+        }
+    }, { passive: true });
+
+    // Init
+    goTo(0);
+}
+
+// Run after fonts/images settle so offsetWidth is accurate
+window.addEventListener('load', initTestimonialsCarousel);
+
+
 // ========== Console Message ==========
 console.log('%c🚀 SoftPay', 'font-size: 20px; font-weight: bold; color: #1DA1F2;');
 console.log('%cDesenvolvido por VisionX Soluções Tecnológicas', 'font-size: 12px; color: #666;');
