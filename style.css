@@ -947,8 +947,20 @@ section {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
+}
+
+.footer-company {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.875rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-company strong {
+    color: var(--color-white);
+    font-weight: 600;
 }
 
 .footer-column h4 {

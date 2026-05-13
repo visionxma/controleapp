@@ -1,0 +1,120 @@
+/* Shared styles for legal pages (Termos, Privacidade, Reembolso) */
+
+.legal-page {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: var(--spacing-3xl);
+}
+
+.legal-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.legal-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-gray-700);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: var(--spacing-lg);
+    transition: color var(--transition-fast);
+}
+
+.legal-back:hover {
+    color: var(--color-primary);
+}
+
+.legal-back svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+    fill: none;
+    stroke: currentColor;
+}
+
+.legal-title {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    color: var(--color-gray-900);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.legal-updated {
+    color: var(--color-gray-600);
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.legal-content section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.legal-content h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--color-gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-content p {
+    color: var(--color-gray-700);
+    line-height: 1.75;
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-content ul {
+    color: var(--color-gray-700);
+    line-height: 1.8;
+    padding-left: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.legal-content ul.list-none {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-content ul.list-none li {
+    margin-bottom: 0.35rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-content strong {
+    color: var(--color-gray-900);
+    font-weight: 600;
+}
+
+.legal-content a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.legal-content a:hover {
+    text-decoration: underline;
+}
+
+.legal-footer {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-gray-200);
+    text-align: center;
+    color: var(--color-gray-600);
+    font-size: 0.85rem;
+}
+
+/* Compact navbar for legal pages */
+.legal-page .navbar {
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
